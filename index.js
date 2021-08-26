@@ -91,6 +91,10 @@ async function _listenNetwork(url, networkidletimeout = 3000) {
                 const status = response.status();
                 const statusText = response.statusText();
                 const text = await response.text();
+                let json = null;
+                try {
+                    json = await response.json();
+                } catch (e) { }
                 _network.response = {
                     body,
                     finished,
@@ -99,7 +103,8 @@ async function _listenNetwork(url, networkidletimeout = 3000) {
                     serverAddr,
                     status,
                     statusText,
-                    text
+                    text,
+                    json
                 };
             } catch (e) {
                 _network.responseError = new Error(e);

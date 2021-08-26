@@ -1,0 +1,20 @@
+{
+    "name": "browser-network-listener",
+    "version": "0.0.1",
+    "description": "浏览器网络请求支援监听器",
+    "author": "zxy<zxy@zhouxiaoyue.cn>",
+    "main": "./index.js",
+    "repository": {
+        "type": "git",
+        "location": "git@github.com:zhou090221liang/browser-network-listener.git",
+        "url": "https://github.com/zhou090221liang/browser-network-listener"
+    },
+    "keywords": [
+        "browser",
+        "network",
+        "listener"
+    ],
+    "dependencies": {
+        "playwright": "^1.14.1"
+    }
+}

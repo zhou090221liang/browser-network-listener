@@ -57,7 +57,7 @@ function sleep(time) {
  * @param {number} [networkidletimeout=3000] 超时时间
  * @returns
  */
-async function _listenNetwork(url, networkidletimeout = 3000) {
+async function _listenNetwork(url, networkidletimeout = 30000) {
     const network = [];
     const browser = await this._instance.driver.launch({ headless: this._config.headless });
     const context = await browser.newContext(this._config.contentConfig);

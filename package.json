@@ -1,6 +1,6 @@
 {
     "name": "browser-network-listener",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "浏览器网络请求支援监听器",
     "author": "zxy<zxy@zhouxiaoyue.cn>",
     "main": "./index.js",
